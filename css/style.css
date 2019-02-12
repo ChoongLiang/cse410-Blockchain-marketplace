@@ -1,5 +1,5 @@
 body{
-	background:white;
+	background:#f4f4f4;
 	color:#555;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 	line-height:1.6em;
@@ -12,13 +12,23 @@ body{
 	overflow: hidden;
 }
 
-#main-header{
+header{
 	background:#ea6a09;
+	min-height:120px;
 	color:white;
+	border-bottom: solid #bbb 5px;
+}
+
+header h1{
+	float:left;
+	font-size:40px;
+	color:#000;
 }
 
 #navbar ul{
 	list-style: none;
+	float:right;
+	margin-top:35px;
 }
 
 #navbar li{
@@ -27,8 +37,9 @@ body{
 
 #navbar a{
 	margin:1em;
-	color:white;
+	color:#fff;
 	text-decoration: none;
+	font-size:25px;
 }
 
 .latest_transaction h1{
