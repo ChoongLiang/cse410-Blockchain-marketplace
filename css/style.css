@@ -75,6 +75,7 @@ header .home-logo a:hover{
 	font-weight:lighter;
 }
 
+/* Transaction */
 .latest_transaction h1{
 	font-style: italic;
 	font-size:40px
@@ -98,7 +99,7 @@ header .home-logo a:hover{
 }
 
 /* Login */
-#login{
+#login, #signup{
 	background:#f4f4f4;
 	border:5px solid #b7b7b7;
 	width: 30%;
@@ -108,12 +109,30 @@ header .home-logo a:hover{
 	text-align: center;
 }
 
-#login input{
+#login label, #signup label{
+	display: block;
+	margin-top:20px;
+	font-size:30px;
+}
+
+#login input, #signup input{
 	width:70%;
 	height:40px;
-	display:block;
 	margin:auto;
+	margin-top:10px;
 	padding:5px;
+	font-size:20px;
+}
+
+/* About Us */
+#about-us h1{
+	font-size:30px;
+}
+
+#about-us p{
+	border:5px solid #b7b7b7;
+	background-color: #e8e8e8;
+	padding:15px;
 	font-size:20px;
 }
 
