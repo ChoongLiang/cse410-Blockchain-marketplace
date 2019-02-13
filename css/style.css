@@ -2,44 +2,77 @@ body{
 	background:#f4f4f4;
 	color:#555;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
-	line-height:1.6em;
+	line-height:1em;
 	margin:0;
 }
 
+/* Global */
 .container{
 	width:90%;
 	margin:auto;
 	overflow: hidden;
 }
 
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+.button_1{
+	padding:10px;
+	font-size:20px;
+	background:#ff9b49;
+	color:white;
+	margin-top:20px;
+	width:50%;
+}
+
+/* Header */
 header{
-	background:#ea6a09;
-	min-height:120px;
+	background:#ff9b49;
+	min-height:100px;
 	color:white;
 	border-bottom: solid #bbb 5px;
 }
 
-header h1{
+header .home-logo a{
 	float:left;
+	margin-top:25px;
 	font-size:40px;
-	color:#000;
+	color:black;
+	text-decoration: none;
 }
 
-#navbar ul{
-	list-style: none;
+header nav{
 	float:right;
 	margin-top:35px;
 }
 
-#navbar li{
+header li{
+	float:left;
 	display: inline;
 }
 
-#navbar a{
+header a{
 	margin:1em;
 	color:#fff;
 	text-decoration: none;
 	font-size:25px;
+}
+
+header .current a{
+	color: #602c02;
+	font-weight: bolder;
+}
+
+header a:hover{
+	color:#994400;
+	font-weight: bold;
+}
+
+header .home-logo a:hover{
+	color:black;
+	font-weight:lighter;
 }
 
 .latest_transaction h1{
@@ -62,4 +95,34 @@ header h1{
 
 .item_box > div:nth-child(even){
 	background:#eee;
+}
+
+/* Login */
+#login{
+	background:#f4f4f4;
+	border:5px solid #b7b7b7;
+	width: 30%;
+	margin:auto;
+	margin-top:100px;
+	padding:20px;
+	text-align: center;
+}
+
+#login input{
+	width:70%;
+	height:40px;
+	display:block;
+	margin:auto;
+	padding:5px;
+	font-size:20px;
+}
+
+footer{
+	background:#ff9b49;
+	text-align: center;
+	font-size:15px;
+	margin-top: 150px;
+	padding:10px;
+	color:#000;
+	border-top: solid 5px #bbb;
 }
