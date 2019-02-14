@@ -11,6 +11,7 @@ body{
 	width:90%;
 	margin:auto;
 	overflow: hidden;
+	height:100%;
 }
 
 ul{
@@ -144,4 +145,8 @@ footer{
 	padding:10px;
 	color:#000;
 	border-top: solid 5px #bbb;
+	position: relative;
+	bottom: 0;
+	width:100%;
+	height:60px;
 }
