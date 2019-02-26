@@ -27,7 +27,9 @@ To access the pages, open up any browser, then goto
 
 (ie. Port Number 3000)
 
-[https://localhost://3000](https://localhost://3000)
+[localhost://3000](http://localhost://3000)
+
+Last thing, to terminate the server, simply press control + c.
 
 Accessing database
 ==================
