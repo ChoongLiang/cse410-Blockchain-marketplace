@@ -2,7 +2,7 @@
 #### By Alex Kim & ChoongLiang Tan
 
 # Start the server
-(If you are not using webstorm, only apply to IDE and terminal)
+(If you are not using WebStorm, only apply to IDE and terminal)
 
 First, cd in to the project folder.
 
@@ -22,6 +22,12 @@ MongoDB connected
 ```
 
 Now the server is up.
+
+To access the pages, open up any browser, then goto
+
+(ie. Port Number 3000)
+
+[https://localhost://3000](https://localhost://3000)
 
 Accessing database
 ==================
