@@ -14,4 +14,9 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+// About
+router.get('/about', function (req, res) {
+    res.render('about', {title: 'Big Market'});
+});
+
 module.exports = router;
