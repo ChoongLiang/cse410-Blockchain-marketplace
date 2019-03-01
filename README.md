@@ -4,7 +4,6 @@
 **Before you start, make sure you installed MongoDB and Node.js.
 If you're not using WebStorm, only apply to IDE and Terminal.**
 
-===============
 Starting server
 ===============
 
@@ -21,7 +20,6 @@ MongoDB connected
 For example, for Port Number 3000, ```localhost:3000```.
 5. Lastly, press Control + c to terminate the server.
 
-==================
 Accessing database
 ==================
 
