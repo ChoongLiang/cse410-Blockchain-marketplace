@@ -14,9 +14,19 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
-// About
+// Index-Active
+router.get('/index-active', function (req, res) {
+    res.render('index-active', {title: 'Big Market'});
+});
+
+// About-Inactive
 router.get('/about', function (req, res) {
     res.render('about', {title: 'Big Market'});
+});
+
+// About-Active
+router.get('/about-active', function (req, res) {
+    res.render('about-active', {title: 'Big Market'});
 });
 
 module.exports = router;
