@@ -22,9 +22,12 @@ ul{
 }
 
 .button_1{
+	border: 2px solid #DEDEDE;
+	border-radius: 10px;
+	cursor: pointer;
 	padding:10px;
 	font-size:20px;
-	background:#ff9b49;
+	background:#3b5998;
 	color:white;
 	margin-top:20px;
 	width:50%;
@@ -32,17 +35,17 @@ ul{
 
 /* Header */
 header{
-	background:#ff9b49;
+	background:#3b5998;
 	min-height:100px;
 	color:white;
-	border-bottom: solid #bbb 5px;
+	border-bottom: solid #8b9dc3 5px;
 }
 
 header .home-logo a{
 	float:left;
 	margin-top:25px;
 	font-size:40px;
-	color:black;
+	color:white;
 	text-decoration: none;
 }
 
@@ -58,24 +61,24 @@ header li{
 
 header a{
 	margin:1em;
-	color:#fff;
+	color:white;
 	text-decoration: none;
 	font-size:25px;
 }
 
 header .current a{
-	color: #602c02;
-	font-weight: bolder;
+	color: #8b9dc3;
+	font-weight: bold;
 }
 
 header a:hover{
-	color:#994400;
+	color:#dfe3ee;
 	font-weight: bold;
 }
 
 header .home-logo a:hover{
-	color:black;
-	font-weight:lighter;
+	color: #dfe3ee;
+	font-weight: bold;
 }
 
 /* Transaction */
@@ -102,14 +105,14 @@ header .home-logo a:hover{
 	background:#eee;
 }
 
-/* Login */
-#login, #signup{
+/* Form layouts */
+#login, #signup {
 	background:#f4f4f4;
 	border-radius: 50px;
 	border:5px solid #b7b7b7;
 	width: 30%;
 	margin:auto;
-	margin-top:100px;
+	margin-top:50px;
 	padding:20px;
 	text-align: center;
 }
@@ -129,6 +132,15 @@ header .home-logo a:hover{
 	font-size:20px;
 }
 
+#sell input{
+	width:70%;
+	height:30px;
+	margin:auto;
+	margin-top:20px;
+	padding:5px;
+	font-size:15px;
+}
+
 /* About Us */
 #about-us h1{
 	font-size:30px;
@@ -143,13 +155,13 @@ header .home-logo a:hover{
 }
 
 footer{
-	background:#ff9b49;
+	background:#3b5998;
 	text-align: center;
 	font-size:15px;
 	margin-top: 150px;
 	padding:10px;
-	color:#000;
-	border-top: solid 5px #bbb;
+	color:white;
+	border-top: solid 5px #8b9dc3;
 	position: relative;
 	bottom: 0;
 	width:100%;
