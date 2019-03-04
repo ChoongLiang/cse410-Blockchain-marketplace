@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%=title %> - Dashboard</title>
+    <title><%=title %> - Item Details</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 			</span>
         <nav id="navbar">
             <ul>
-                <li class="current"><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
                 <li><a href="/users/logout">Log Out</a></li>
                 <li><a href="/about-active">About</a></li>
             </ul>
@@ -24,29 +24,40 @@
 <div style="margin-top:40px"></div>
 
 <div class="container">
-    <center><h1>Hey there! What do you want to sell?</h1></center>
+    <center><h1>Item Details</h1></center>
 
       <section id="sell">
           <div class="container">
             <div align="right">
               <form action="ADD TEXT HERE" method="sell">
+                <div>
+                    <label>Item ID: </label>
+                    <input type="number" name="id" placeholder="DISPLAY ITEM ID HERE" required autofocus>
+                </div>
                   <div>
                       <label>Name: </label>
-                      <input type="text" name="name" placeholder="Name" required>
+                      <input type="text" name="name" placeholder="DISPLAY NAME HERE" required>
                   </div>
                   <div>
                       <label>Description: </label>
-                      <input type="text" name="description" placeholder="Description" required>
+                      <input type="text" name="description" placeholder="DISPLAY DESCRIPTION HERE" required>
                   </div>
                   <div>
                       <label>Price: </label>
-                      <input type="number" name="price" placeholder="Price" required>
+                      <input type="number" name="price" placeholder="DISPLAY PRICE HERE" required>
                   </div>
                   <div>
                       <label>Photo: </lavel>
-                        <input type="file">
+                      <input type="number" name="photo" placeholder="DISPLAY PHOTO HERE" required>
                   </div>
-                  <center><button class="button_1" type="submit">Post Item</button></center>
+                  <div>
+                    <label>Status: </label>
+                    <input type="text" name="status" placeholder="DISPLAY STATUS HERE" required>
+                  </div>
+                  <center>
+                    <button class="buy" type="buy">Buy Item</button>
+                    <button class="return" onclick="window.location.href='/index-active';">Return to List</button>
+                  </center>
               </form>
           </div>
         </div>

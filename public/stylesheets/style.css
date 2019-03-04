@@ -21,6 +21,7 @@ ul{
 	padding:0;
 }
 
+/* Normal button layout */
 .button_1{
 	border: 2px solid #DEDEDE;
 	border-radius: 10px;
@@ -31,6 +32,32 @@ ul{
 	color:white;
 	margin-top:20px;
 	width:50%;
+}
+
+/* Buy button layout */
+.buy {
+	border: 2px solid #DEDEDE;
+	border-radius: 10px;
+	cursor: pointer;
+	padding:10px;
+	font-size:20px;
+	background:#008000;
+	color:white;
+	margin-top:20px;
+	width:40%;
+}
+
+/* Return button layout */
+.return {
+	border: 2px solid #DEDEDE;
+	border-radius: 10px;
+	cursor: pointer;
+	padding:10px;
+	font-size:20px;
+	background:#FF0000;
+	color:white;
+	margin-top:20px;
+	width:40%;
 }
 
 /* Header */
