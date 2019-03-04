@@ -31,7 +31,7 @@ ul{
 	background:#3b5998;
 	color:white;
 	margin-top:20px;
-	width:50%;
+	width:30%;
 }
 
 /* Buy button layout */
@@ -46,8 +46,8 @@ ul{
 	width:100%;
 }
 
-/* Reject button layout */
-.reject {
+/* Buy(Disabled) button layout */
+.login {
 	border: 2px solid #DEDEDE;
 	border-radius: 10px;
 	cursor: pointer;
