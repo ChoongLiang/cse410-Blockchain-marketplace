@@ -14,12 +14,6 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
-// Item
-router.get('/item', function (req, res) {
-    res.render('item', {title: 'Big Market'});
-});
-
-
 // Index-Active
 router.get('/index-active', function (req, res) {
     res.render('index-active', {title: 'Big Market'});
