@@ -1,5 +1,5 @@
 # CSE410 - Blockchain Marketplace
-# By Alex Kim & ChoongLiang Tan
+By Alex Kim & ChoongLiang Tan
 
 **Before you start, make sure you installed MongoDB and Node.js.
 If you're not using WebStorm, only apply to IDE and Terminal.**
