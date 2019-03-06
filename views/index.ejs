@@ -29,154 +29,33 @@
   <center>
   <table>
     <tr>
-      <td colspan="5" bgcolor="#A9A9A9"><font size="4">
-        <strong>Seller 1's Items</strong></font></td>
+      <td colspan="6" bgcolor="#A9A9A9"><font size="4">
+        <strong>All products</strong></font></td>
     </tr>
   <tr>
+    <td><strong>Seller</strong></td>
     <td><strong>Item ID</strong></td>
-    <td><strong>Name</strong></td>
-    <td><strong>Photo</strong></td>
+    <td><strong>Product</strong></td>
     <td><strong>Price</strong></td>
     <td><strong>Status</strong></td>
   </tr>
+    <% for(var i=0; i < data.length; i++) { %>
   <tr>
-    <td>Item 1's ID</td>
-    <td>Item 1's Name</td>
-    <td>Item 1's Photo</td>
-    <td>Item 1's Price</td>
-    <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
+    <td><%= data[i].sellerID %></td>
+    <td><%= data[i]._id %></td>
+    <td><%= data[i].name %></td>
+    <td><%= data[i].price %></td>
+    <td><button class="buy" onclick="window.location.href='/users/login';">Buy</button></td>
   </tr>
-  <tr>
-    <td>Item 2's ID</td>
-    <td>Item 2's Name</td>
-    <td>Item 2's Photo</td>
-    <td>Item 2's Price</td>
-    <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-  </tr>
-  <tr>
-    <td>Item 3's ID</td>
-    <td>Item 3's Name</td>
-    <td>Item 3's Photo</td>
-    <td>Item 3's Price</td>
-    <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-  </tr>
-  <tr>
-    <td>Item 4's ID</td>
-    <td>Item 4's Name</td>
-    <td>Item 4's Photo</td>
-    <td>Item 4's Price</td>
-    <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-  </tr>
-  <tr>
-    <td>Item 5's ID</td>
-    <td>Item 5's Name</td>
-    <td>Item 5's Photo</td>
-    <td>Item 5's Price</td>
-    <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-  </tr>
+    <% } %>
 </table>
 
-<table>
-  <tr>
-    <td colspan="5" bgcolor="#A9A9A9"><font size="4">
-      <strong>Seller 2's Items</strong></font></td>
-  </tr>
-<tr>
-  <td><strong>Item ID</strong></td>
-  <td><strong>Name</strong></td>
-  <td><strong>Photo</strong></td>
-  <td><strong>Price</strong></td>
-  <td><strong>Status</strong></td>
-</tr>
-<tr>
-  <td>Item 1's ID</td>
-  <td>Item 1's Name</td>
-  <td>Item 1's Photo</td>
-  <td>Item 1's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 2's ID</td>
-  <td>Item 2's Name</td>
-  <td>Item 2's Photo</td>
-  <td>Item 2's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 3's ID</td>
-  <td>Item 3's Name</td>
-  <td>Item 3's Photo</td>
-  <td>Item 3's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 4's ID</td>
-  <td>Item 4's Name</td>
-  <td>Item 4's Photo</td>
-  <td>Item 4's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 5's ID</td>
-  <td>Item 5's Name</td>
-  <td>Item 5's Photo</td>
-  <td>Item 5's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-</table>
-
-<table>
-  <tr>
-    <td colspan="5" bgcolor="#A9A9A9"><font size="4">
-      <strong>Seller 3's Items</strong></font></td>
-  </tr>
-<tr>
-  <td><strong>Item ID</strong></td>
-  <td><strong>Name</strong></td>
-  <td><strong>Photo</strong></td>
-  <td><strong>Price</strong></td>
-  <td><strong>Status</strong></td>
-</tr>
-<tr>
-  <td>Item 1's ID</td>
-  <td>Item 1's Name</td>
-  <td>Item 1's Photo</td>
-  <td>Item 1's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 2's ID</td>
-  <td>Item 2's Name</td>
-  <td>Item 2's Photo</td>
-  <td>Item 2's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 3's ID</td>
-  <td>Item 3's Name</td>
-  <td>Item 3's Photo</td>
-  <td>Item 3's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 4's ID</td>
-  <td>Item 4's Name</td>
-  <td>Item 4's Photo</td>
-  <td>Item 4's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-<tr>
-  <td>Item 5's ID</td>
-  <td>Item 5's Name</td>
-  <td>Item 5's Photo</td>
-  <td>Item 5's Price</td>
-  <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td></td>
-</tr>
-</table>
 </center>
 
 <footer>
   <h2>Copyrights &copy; Reserved by Big Market, 2019.</h2>
 </footer>
+
+  </div>
 </body>
 </html>

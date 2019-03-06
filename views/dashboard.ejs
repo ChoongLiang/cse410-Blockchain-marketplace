@@ -24,12 +24,12 @@
 <div style="margin-top:40px"></div>
 
 <div class="container">
-    <center><h1>Hey there! What do you want to sell?</h1></center>
+    <center><h1>Hey <%= userUsername%>, what do you want to sell?</h1></center>
 
       <section id="sell">
           <div class="container">
             <div align="right">
-              <form action="ADD TEXT HERE" method="sell">
+              <form action="/dashboard" method="POST">
                   <div>
                       <label>Name: </label>
                       <input type="text" name="name" placeholder="Name" required>
@@ -37,10 +37,6 @@
                   <div>
                       <label>Price: </label>
                       <input type="number" name="price" placeholder="Price" required>
-                  </div>
-                  <div>
-                      <label>Photo: </lavel>
-                      <input type="file">
                   </div>
                   <center><button class="button_1" type="submit">Post</button></center>
               </form>
