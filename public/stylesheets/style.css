@@ -44,18 +44,6 @@ ul{
 	width:100%;
 }
 
-/* Buy(Disabled) button layout */
-.login {
-	border: 2px solid #DEDEDE;
-	border-radius: 10px;
-	cursor: pointer;
-	padding:5px;
-	font-size:15px;
-	background:#A9A9A9;
-	color:white;
-	width:100%;
-}
-
 /* Header */
 header{
 	background:#3b5998;
