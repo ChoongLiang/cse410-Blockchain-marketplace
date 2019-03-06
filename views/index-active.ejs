@@ -30,22 +30,20 @@
   <table>
     <tr>
       <td colspan="6" bgcolor="#A9A9A9"><font size="4">
-          <strong>Seller 1's Items</strong></font></td>
+          <strong>All products</strong></font></td>
     </tr>
     <tr>
       <td><strong>Seller</strong></td>
       <td><strong>Item ID</strong></td>
-      <td><strong>Name</strong></td>
-      <td><strong>Photo</strong></td>
+      <td><strong>Product</strong></td>
       <td><strong>Price</strong></td>
       <td><strong>Status</strong></td>
     </tr>
     <% for(var i=0; i < data.length; i++) { %>
       <tr>
         <td><%= data[i].sellerID %></td>
-        <td><%= data[i].id %></td>
+        <td><%= data[i]._id %></td>
         <td><%= data[i].name %></td>
-        <td><%= data[i].photo %></td>
         <td><%= data[i].price %></td>
         <td><button class="login" onclick="window.location.href='/users/login';">Buy</button></td>
       </tr>
