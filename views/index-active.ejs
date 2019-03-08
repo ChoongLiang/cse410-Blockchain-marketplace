@@ -21,6 +21,11 @@
   </div>
 </header>
 
+<!-- Credits label -->
+<div style="text-align: right; margin-right: 50px">
+  <h2>Credit Balance: <%= credits%></h2>
+</div>
+
 <div class="container">
   <div class="latest_transaction">
     <center><h1>Latest Transaction</h1></center>
@@ -44,7 +49,7 @@
         <td><%= data[i].sellerID %></td>
         <td><%= data[i]._id %></td>
         <td><%= data[i].name %></td>
-        <td><%= data[i].price %></td>
+=======
         <td><button class="buy">Buy</button></td>
       </tr>
     <% } %>

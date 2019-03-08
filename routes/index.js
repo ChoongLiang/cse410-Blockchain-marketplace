@@ -27,13 +27,11 @@ router.get('/', function (req, res) {
             const productDatabase = db.db('blockchain_market');
             var collection = productDatabase.collection('products');
 
-            // Find all students
+            // Find all products
             collection.find({}).toArray(function (err, result) {
                 if (err) {
                     res.send(err);
                 } else if (result.length) {
-                    // Make result global
-                    global.datafromDB = result;
                     res.render('index', {
                         title: 'Big Market',
                         data: result
@@ -52,11 +50,50 @@ router.get('/', function (req, res) {
 });
 
 // Dashboard
-router.get('/dashboard', ensureAuthenticated, (req, res) =>
-  res.render('dashboard', {
-    user: req.user, title: 'Big Market', userUsername: req.user.username,
-  })
-);
+router.get('/dashboard', ensureAuthenticated, function(req, res){
+
+    var MongoClient = mongodb.MongoClient;
+    var url = 'mongodb://localhost/blockchain_market';
+
+    // Connect to the server
+    MongoClient.connect(url, function (err, db) {
+    if (err) {
+        console.log('Unable to connect to the Server', err);
+    } else {
+        // Connected
+        console.log('Connection established to', url);
+
+        // In order to pull data from database,
+        // We need to get the entire database first,
+        // Then from there we take the collections we want.
+        const productDatabase = db.db('blockchain_market');
+        var collection = productDatabase.collection('products');
+
+        // Find all products
+        collection.find({sellerID: req.user.username}).toArray(function (err, result) {
+            if (err) {
+                res.send(err);
+            } else if (result) {
+                res.render('dashboard', {
+                    data: result,
+                    user: req.user,
+                    title: 'Big Market',
+                    userUsername: req.user.username,
+                    credits: req.user.credits
+                });
+            } else {
+                res.render('dashboard', {
+                    user: req.user,
+                    title: 'Big Market',
+                    userUsername: req.user.username,
+                    credits: req.user.credits,
+                    data: result
+                });
+            //Close connection
+            db.close();
+        }})
+    }});
+});
 
 // Generate new product
 router.post('/dashboard',ensureAuthenticated,function (req, res){
@@ -76,8 +113,6 @@ router.post('/dashboard',ensureAuthenticated,function (req, res){
         });
 
 });
-
-
 
 // About
 router.get('/about', function (req, res) {
@@ -104,20 +139,22 @@ router.get('/index-active', ensureAuthenticated,function (req, res){
             const productDatabase = db.db('blockchain_market');
             var collection = productDatabase.collection('products');
 
-            // Find all students
+            // Find all products
             collection.find({}).toArray(function (err, result) {
                 if (err) {
                     res.send(err);
                 } else if (result.length) {
-                    // Make result global
-                    global.datafromDB = result;
                     res.render('index-active', {
                         title: 'Big Market',
-                        data: result
+                        data: result,
+                        credits: req.user.credits,
                     });
                 } else {
-                    res.send('No products found');
-                }
+                    res.render('index-active', {
+                        title: 'Big Market',
+                        data: result,
+                        credits: req.user.credits,
+                    });}
                 //Close connection
                 db.close();
             });
