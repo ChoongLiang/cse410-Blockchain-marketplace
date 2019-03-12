@@ -9,7 +9,8 @@
 <header>
   <div class="container">
 			<span class="home-logo">
-				<a href="/index-active"><%=title %></a>
+				 <div id="homeLogo">
+        <a href="/"><img src="../psd/logo_sm_transparent.png" alt="bigmarketLogo" width="350px" height="200px"></a></div>
 			</span>
     <nav id="navbar">
       <ul>
@@ -22,12 +23,12 @@
 </header>
 
 <!-- Credits label -->
-<div style="text-align: right; margin-right: 50px">
-  <h2>Credit Balance: <%= credits%></h2>
+<div style="text-align: right; margin-right: 50px;">
+  <h2 style="margin-top: -90px;">Credit Balance: <%= credits%></h2>
 </div>
 
 <div class="container">
-  <div class="latest_transaction">
+  <div class="latest_transaction" style="margin-top: 30px;">
     <center><h1>Latest Transaction</h1></center>
   </div>
 
@@ -42,19 +43,20 @@
       <td><strong>Item ID</strong></td>
       <td><strong>Product</strong></td>
       <td><strong>Price</strong></td>
-      <td><strong>Status</strong></td>
     </tr>
     <% for(var i=0; i < data.length; i++) { %>
       <tr>
         <td><%= data[i].sellerID %></td>
         <td><%= data[i]._id %></td>
         <td><%= data[i].name %></td>
-=======
+
         <td><button class="buy">Buy</button></td>
       </tr>
     <% } %>
 </table>
 </center>
+
+<div style="margin-top: 150px"></div>
 
 <footer>
   <h2>Copyrights &copy; Reserved by Big Market, 2019.</h2>

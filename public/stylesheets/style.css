@@ -11,7 +11,7 @@ body{
 	margin:auto;
 	overflow: hidden;
 	height:100%;
-	width:100%;
+	width:95%;
 }
 
 ul{
@@ -51,10 +51,14 @@ ul{
 
 /* Header */
 header{
-	background:#3b5998;
-	min-height:100px;
+	background:#f4f4f4;
+	min-height:50px;
 	color:white;
-	border-bottom: solid #8b9dc3 5px;
+}
+
+#homeLogo{
+	margin:auto;
+	align-content: center;
 }
 
 header .home-logo a{
@@ -67,7 +71,7 @@ header .home-logo a{
 
 header nav{
 	float:right;
-	margin-top:35px;
+	margin-top: 100px;
 }
 
 header li{
@@ -76,10 +80,10 @@ header li{
 }
 
 header a{
-	margin:1em;
-	color:white;
+	margin:1.5em;
+	color:black;
 	text-decoration: none;
-	font-size:25px;
+	font-size:30px;
 }
 
 header .current a{
@@ -89,12 +93,10 @@ header .current a{
 
 header a:hover{
 	color:#dfe3ee;
-	font-weight: bold;
 }
 
 header .home-logo a:hover{
 	color: #dfe3ee;
-	font-weight: bold;
 }
 
 /* Transaction */
@@ -193,15 +195,11 @@ tr:nth-child(even) {
 }
 
 footer{
-	background:#3b5998;
 	text-align: center;
 	font-size:15px;
-	margin-top: 150px;
+	margin-bottom: -10px;
+	min-height: 100%;
 	padding:10px;
-	color:white;
-	border-top: solid 5px #8b9dc3;
-	position: relative;
-	bottom: 0;
-	width:100%;
+	color:#000;
 	height:60px;
 }
