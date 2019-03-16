@@ -181,6 +181,36 @@ tr:nth-child(even) {
 	font-size:15px;
 }
 
+/* Product */
+#productPageList {
+	width:50%;
+	margin:auto;
+}
+
+#productPageList li{
+	font-size:30px;
+	text-align: center;
+	padding:0.5em;
+	list-style-type: none;
+}
+
+#buyProduct{
+	width:10%;
+	margin:0 auto;
+	padding:0.5em;
+	display:block;
+	font-size:25px;
+	background:#3ad80a;
+	color:white;
+}
+
+/* Success redirect page */
+#redirectText{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom:100px;
+}
+
 /* About Us */
 #about-us h1{
 	font-size:30px;
